@@ -1,12 +1,12 @@
 # Python installation  
 
-## Installing Python 3 in Windows
+## Step 1: Installing Python 3 in Windows
 
 * Download the [installer](https://www.python.org/).  
 Note: Should have atleast Python 3.8
 * Run the Installer, check the box at the bottom of the setup window : "Add Python 3.x to PATH". 
 
-## Verify the Python Installation
+## Step 2: Verify the Python Installation
 * Open the command prompt, terminal or powershell and run the command  
 ``` 
 python --version
@@ -14,7 +14,7 @@ python --version
 C:\Users\s545514>python --version
 Python 3.10.2
 
-## Creating Data Science Virtual Environment
+## Step 3: Creating Big Data Virtual Environment
 
 To create virtual environment run the following command
 ``` 
@@ -42,8 +42,29 @@ C:\Users\s545514>dir bd-venv
 
 C:\Users\s545514>
 
-``` 
+```  
+
+## Step 4: Activating the environment 
 Virtual environment is set up. Whenever we want to use python, need to activate the environment.
+Open the command prompt and run the following command.
+```
+C:\Users\s545514>bd-venv\Scripts\Activate
+
+(bd-venv) C:\Users\s545514>
+```
+## Step 5: Installation of packages
+We can install packages. To install the package following is the command.
+```
+pip install <packagename>
+``` 
+### Installing Numpy 
+```
+C:\Users\s545514>bd-venv\Scripts\Activate
+
+(bd-venv) C:\Users\s545514>pip install numpy==1.19.3
+```
+
+### Installing JupyterLab and Matplotlib
 
 
 
